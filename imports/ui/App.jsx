@@ -462,7 +462,16 @@ export const App = () => {
         <span className="footer-tagline">{t("footer.line")} {/*<i>·</i> {t("footer.end")}*/}</span>
         <span className="footer-copyright">© 2026 ClearSkies Web Labs</span>
         <span className="footer-credit">
-          {/*{t("footer.credit")} <i>·</i>*/} <span className="footer-phone" aria-hidden="true">📱</span> +51 996852408
+          {/*{t("footer.credit")} <i>·</i>*/}
+          <span className="footer-phone" aria-hidden="true">📱</span>
+          <span className="whatsapp-contact" tabIndex={0} aria-label="WhatsApp: @ybicoaugusto" data-handle="whatsapp: @ybicoaugusto">
+            <svg aria-hidden="true" viewBox="0 0 32 32">
+              <circle cx="16" cy="16" r="15" fill="#25d366" />
+              <path d="M24.7 7.3a12.2 12.2 0 0 0-19.2 14.8L4 28l6.1-1.6a12.2 12.2 0 0 0 14.6-19.1Z" fill="none" stroke="#fff" strokeLinejoin="round" strokeWidth="1.8" />
+              <path d="M12 9.2c-.3-.6-.6-.6-.9-.6h-.8c-.3 0-.7.1-1 .5-.4.4-1.3 1.3-1.3 3.1s1.3 3.6 1.5 3.8c.2.3 2.5 4 6.1 5.4 3 .1 3.6 0 4.2-.2.6-.2 1.9-.8 2.2-1.6.3-.8.3-1.4.2-1.6-.1-.2-.3-.3-.7-.5l-2.2-1c-.3-.1-.6-.2-.8.2-.2.4-.9 1.1-1.1 1.3-.2.2-.4.3-.8.1-.4-.2-1.5-.6-2.8-1.7-1-.9-1.7-2-1.9-2.4-.2-.4 0-.6.2-.8l.6-.7c.2-.2.3-.4.4-.6.1-.2.1-.4 0-.6l-1-2.1Z" fill="#fff" />
+            </svg>
+          </span>
+          +51 996852408
         </span>
       </footer>
       {showLogin && !user && <div className="auth-overlay"><LoginPage language={language} t={t} onLanguageToggle={() => setLanguage(language === "es" ? "en" : "es")} /></div>}
