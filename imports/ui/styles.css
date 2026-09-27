@@ -159,3 +159,32 @@ button { cursor:pointer; }
   .account-actions { grid-column:3; grid-row:2; justify-content:flex-start; gap:8px; }
 }
 
+.brand h1 { font-size:clamp(21px, 1.8vw, 24px); }
+.open-status { font-size:clamp(12px, 1vw, 14px); }
+.language-switch { font-size:12px; }
+.panel-heading h2 { font-size:clamp(27px, 2.2vw, 32px); }
+.panel-heading .eyebrow,
+.sync-badge { font-size:12px; }
+.inventory h3 { font-size:clamp(19px, 1.6vw, 22px); }
+.inventory h3 span { font-size:12px; }
+.inventory-item strong { font-size:13px; }
+.inventory-item small { font-size:11px; }
+.availability { font-size:10px; }
+.accounts-heading h2 { font-size:clamp(29px, 2.4vw, 34px); }
+.accounts-intro,
+.account-list-heading p { font-size:14px; }
+.account-form h3,
+.account-list-heading h3 { font-size:21px; }
+.account-identity strong { font-size:14px; }
+.account-identity small { font-size:11px; }
+.account-switch,
+.account-action { font-size:11px; }
+.site-footer { font-size:clamp(11px, 1vw, 13px); }
+
+@media (max-width:700px) {
+  .brand h1 { font-size:21px; }
+  .open-status { font-size:12px; }
+  .panel-heading h2 { font-size:27px; }
+  .accounts-heading h2 { font-size:29px; }
+  .site-footer { font-size:12px; }
+}
