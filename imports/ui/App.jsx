@@ -296,7 +296,7 @@ export const App = () => {
 
         <section className="easel" aria-label={t("menu.aria")}>
           <div className="easel-top"><span /><span /><span /></div>
-          <div className="board">
+          <div className="board" tabIndex={0} aria-label={t("menu.aria")}>
             <div className="board-header">
               <span>{t("menu.today")}</span>
               <span className="board-date">{t("menu.established")}</span>
@@ -349,9 +349,11 @@ export const App = () => {
             {items.map((item) => (
               <div className={`inventory-item ${!item.available ? "unavailable" : ""}`} key={item._id}>
                 <span className={`mini-swatch chalk-${item.color}`} /><div><strong>{item.name}</strong><small>{categoryLabel(item.category)} · ${item.price.toFixed(2)}</small></div>
-                <button className="availability" onClick={() => toggleAvailability(item._id)}>{item.available ? t("availability.on") : t("availability.soldout")}</button>
-                <button className="icon-button" onClick={() => editItem(item)} aria-label={`${t("item.edit")} ${item.name}`}>{t("item.edit")}</button>
-                <button className="icon-button danger" onClick={() => removeItem(item._id)} aria-label={`${t("item.delete")} ${item.name}`}>×</button>
+                <div className="inventory-actions">
+                  <button className="availability" onClick={() => toggleAvailability(item._id)}>{item.available ? t("availability.on") : t("availability.soldout")}</button>
+                  <button className="icon-button" onClick={() => editItem(item)} aria-label={`${t("item.edit")} ${item.name}`}>{t("item.edit")}</button>
+                  <button className="icon-button danger" onClick={() => removeItem(item._id)} aria-label={`${t("item.delete")} ${item.name}`}>{t("item.delete")}</button>
+                </div>
               </div>
             ))}
           </div>
@@ -467,3 +469,4 @@ export const App = () => {
     </div>
   );
 };
+
