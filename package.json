@@ -1,5 +1,5 @@
 {
-  "name": "restaurant-menu",
+  "name": "chalkboard-menu",
   "private": true,
   "scripts": {
     "start": "meteor run",
