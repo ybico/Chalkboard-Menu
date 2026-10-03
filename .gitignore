@@ -12,3 +12,5 @@ _build
 
 /.env
 /todo
+
+mongo-backup/

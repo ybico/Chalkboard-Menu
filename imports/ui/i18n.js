@@ -4,11 +4,11 @@ export const translations = {
     "brand.kicker": "El especial del día",
     "brand.title": "Menú de pizarra",
     "open.today": "Abierto hoy",
-    "login.open": "Acceso de cocina",
+    "login.open": "Acceso a la cocina",
     "logout": "Cerrar sesión",
     "language.label": "Idioma",
     "language.switch": "Cambiar idioma a inglés",
-    "hero.kicker": "Notas de cocina · {date}",
+    "hero.kicker": "Notas de la cocina · {date}",
     "hero.title.first": "Hecho sin prisa.",
     "hero.title.second": "Servido con cariño.",
     "hero.description": "Una pequeña lista de cosas que nos enorgullece servir hoy.",
@@ -16,10 +16,10 @@ export const translations = {
     "menu.aria": "Productos disponibles",
     "menu.today": "menú de hoy",
     "menu.established": "desde 1987 · hecho con cariño",
-    "menu.loading": "Preparando la cocina...",
+    "menu.loading": "Preparando la lista del menú de hoy...",
     "menu.empty": "Hoy todo está descansando.",
     "menu.footer": "consulta por alérgenos · todo se prepara aquí",
-    "console.title": "Administración de cocina · {username}",
+    "console.title": "Administración de la cocina · {username}",
     "console.manage": "Administrar el menú",
     "admin.badge": "✦ Administrador",
     "sync.live": "En vivo",
@@ -369,3 +369,4 @@ export const translateError = (language, error, fallbackKey = "error.generic") =
   }
   return translate(language, fallbackKey);
 };
+
